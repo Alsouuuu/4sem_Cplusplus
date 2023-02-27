@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.5)
+project(task1 LANGUAGES CXX)
+add_executable(${PROJECT_NAME} task1.cpp static_cast.cpp dynamic_cast.cpp const_cast.cpp reinterpret_cast.cpp reinterpret_cast2.cpp hw02.cpp)
+find_package(Catch2)
+target_link_libraries(${PROJECT_NAME} Catch2::Catch2WithMain)
